@@ -29,7 +29,7 @@ export class LetterTaskComponent implements OnInit, OnChanges {
 
   check(char: string) {
     if (this.timeout) {
-      clearTimeout(this.timeout);
+      window.clearTimeout(this.timeout);
     }
 
     if (char.toLowerCase() === this.letter.name.toLowerCase()) {
@@ -40,7 +40,7 @@ export class LetterTaskComponent implements OnInit, OnChanges {
       this.isCorrect = false;
     }
 
-    this.timeout = setTimeout(() => {
+    this.timeout = window.setTimeout(() => {
       this.isCorrect = false;
       this.isIncorrect = false;
     }, 2000);

@@ -8,8 +8,6 @@ import {LocalStorageService} from './local-storage.service';
   providedIn: 'root'
 })
 export class LetterStorageService {
-  private letters: Promise<Array<Letter>>;
-
   constructor(
     private http: HttpClient,
     private storage: LocalStorageService,
