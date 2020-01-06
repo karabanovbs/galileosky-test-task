@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Letter} from './letter';
 import {Observable} from 'rxjs';
 import {LocalStorageService} from './local-storage.service';
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,7 @@ export class LetterStorageService {
       this.storage.removeItem('letters');
     }
 
-    const result = this.http.get<Array<Letter>>('/assets/defaultData.json');
+    const result = this.http.get<Array<Letter>>(`${environment.baseUrl}/assets/defaultData.json`);
 
     result.subscribe(letters => {
       this.storage.setValue('letters', JSON.stringify(letters));
