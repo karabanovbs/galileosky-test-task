@@ -1,0 +1,3 @@
+<div *ngFor="let letter of letters">
+  <a mat-button [ngClass]="{current:currentLetter.name === letter.name}" [routerLink]="['/challenge', letter.name]">{{letter | letterTransform}}</a>
+</div>

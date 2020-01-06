@@ -1,0 +1,52 @@
+:host{
+  display: block;
+  border: solid;
+  border-color: #607d8b57;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+
+p {
+  text-align: center;
+  span.find-letter {
+    font-size: 2em;
+    color: red;
+  }
+}
+
+.task-word{
+  font-size: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-letter{
+  font-weight: bold;
+}
+
+.result-container {
+  width: 3em;
+}
+
+.result {
+  font-size: 0.3em;
+  border-radius: 0.5em;
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: min-content;
+}
+
+.result.positive {
+  background-color: green;
+}
+
+.result.negative {
+  background-color: red;
+}
+
+.correct-letter{
+  color: red;
+}

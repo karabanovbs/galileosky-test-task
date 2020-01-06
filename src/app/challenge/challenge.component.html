@@ -1,0 +1,7 @@
+<div *ngIf="currentLetter; else loadingSpinner">
+  <app-letter-detail [letter]="currentLetter"></app-letter-detail>
+  <app-letter-task [letter]="currentLetter"></app-letter-task>
+  <app-letter-list [currentLetter]="currentLetter" [letters]="letters"></app-letter-list>
+</div>
+<ng-template #loadingSpinner><mat-spinner></mat-spinner></ng-template>
+

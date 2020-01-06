@@ -1,0 +1,15 @@
+<p >Найдите (кликните) букву <span class="find-letter">{{letter.name}}</span> в слове:</p>
+<div class="task-word">
+  <span *ngFor="let char of (testWord | titlecase).split('')"
+        (click)="check(char)"
+        class="task-letter"
+        [ngClass]="{'correct-letter': isCorrect && char.toLowerCase() === letter.name.toLowerCase()}">
+    {{char}}
+  </span>
+  <div class="result-container">
+    <div class="result positive" *ngIf="isCorrect">Правильно!</div>
+    <div class="result negative" *ngIf="isIncorrect">Неправильно!</div>
+  </div>
+</div>
+
+
