@@ -23,8 +23,8 @@ export class LetterTaskComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
     this.testWord = this.letter.challenge[Math.floor(Math.random() * this.letter.challenge.length)];
-    this.isCorrect = true;
     this.isCorrect = false;
+    this.isIncorrect = false;
   }
 
   check(char: string) {
