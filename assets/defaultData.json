@@ -1,0 +1,52 @@
+[
+  {
+    "name": "а",
+    "image": "watermelon.svg",
+    "example": "арбуз",
+    "challenge": [
+      "ананас",
+      "водолаз",
+      "собака"
+    ]
+  },
+  {
+    "name": "б",
+    "image": "banana.svg",
+    "example": "банан",
+    "challenge": [
+      "баран",
+      "кабан",
+      "краб"
+    ]
+  },
+  {
+    "name": "в",
+    "image": "cherry.svg",
+    "example": "вишня",
+    "challenge": [
+      "сова",
+      "волан",
+      "корова"
+    ]
+  },
+  {
+    "name": "г",
+    "image": "pear.svg",
+    "example": "груша",
+    "challenge": [
+      "догма",
+      "говядина",
+      "осьминог"
+    ]
+  },
+  {
+    "name": "д",
+    "image": "tree.svg",
+    "example": "дерево",
+    "challenge": [
+      "дом",
+      "комод",
+      "ядро"
+    ]
+  }
+]
